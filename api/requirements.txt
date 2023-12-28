@@ -1,6 +1,6 @@
 django
 django-rest-framework
-mysql-client
+pymysql
 django-rest-registration
 django-filter
 numpy

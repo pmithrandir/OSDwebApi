@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import json
+import pymysql
 from django.core.exceptions import ImproperlyConfigured
 baseDir = os.path.dirname(os.path.realpath(__file__))
 #print("settings.py: baseDir="+baseDir)
@@ -105,6 +106,7 @@ DATABASES = {
     #}
 }
 
+pymysql.install_as_MySQLdb()
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
